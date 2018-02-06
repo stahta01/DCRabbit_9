@@ -123,7 +123,7 @@
 #use "dcrtcp.lib"
 #use "smtp.lib"
 
-#use REMOTEUPLOADDEFS.LIB
+#use "ZNETSUPPORT.LIB"
 
 /*
  * Note that all libraries that zconsole.lib needs must be #use'd
