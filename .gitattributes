@@ -1,0 +1,77 @@
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.C text
+*.css text
+*.dcLIB text
+*.dcp text
+*.h text
+*.H text
+*.HH text
+*.html text
+*.ini text
+*.js text
+*.lib text
+*.lib.orig text
+*.LIB text
+*.LIB.orig text
+*.mak text
+*.txt text
+*.workspace text
+*.zhtml text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+*.bat text eol=crlf
+*.HEX text eol=crlf
+*.rom text eol=crlf
+*.lst text eol=crlf
+*.map text eol=crlf
+
+# Declare files that will always have LF line endings on checkout.
+*.sh text eol=lf
+.gitattributes text=auto eol=lf
+.gitignore     text=auto eol=lf
+*.cbp text eol=lf
+*.workspace text eol=lf
+*.prj text eol=lf
+*.DIR text eol=lf
+
+# Denote all files that are NOT truly binary;
+# but, it works around a bug as binary.
+
+# Denote all files that are NOT truly binary; but, I do NOT want Git to change/merge them.
+*.brk binary
+#*.HDL binary
+*.org binary
+*.pdf binary
+*.rtf binary
+
+# Denote some files that are maybe binary and should not be modified.
+/Lib/tcpip/SSL/SSL_COMM.LIB binary
+/Lib/tcpip/SSL/ssl_comm.LIB binary
+/Lib/tcpip/SSL/SSL_HS.LIB binary
+/Lib/tcpip/SSL/ssl_hs.LIB binary
+
+# Denote all files that are truly binary and should not be modified.
+*.7z binary
+*.BDL binary
+*.BMP binary
+*.bin binary
+*.BIN binary
+*.bmp binary
+*.DCLIB.HX1 binary
+*.DCLIB.MD1 binary
+*.dll binary
+*.doc binary
+*.exe binary
+*.H.HX1 binary
+*.H.MD1 binary
+*.jpg binary
+*.LIB.HX1 binary
+*.LIB.MD1 binary
+*.lnk binary
+*.pdf binary
+*.png binary
+*.upg binary
+*.zip binary
